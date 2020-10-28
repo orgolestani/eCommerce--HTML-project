@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHE design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Hheader -->
+    <!-- <div class="header"> -->
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/She-LOGO-removebg-preview.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="account.html">account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    </div>
+    <div class="grid-container">
+        <div class="us">
+            <h1 class="title">Who are we</h1>
+            <p>A design collective We collaborate with a brilliant stable of world-renowned designers from all corners of the world. From established design studios to upcoming, vibrant talents, and what we all believe matters the most, is creating beautiful
+                designs that are built to last and to love for many years. Because walking hand in hand with nature, sustainability is the natural starting point of every new design – all the way from the first sketches to the final product.</p>
+        </div>
+        <div class="item2">
+            <img src="images/sahar.jpg" class="sahar-img">
+            <h1>Sahar Shemesh</h1>
+            <p>Sahar is the founder and main artist here in SHE.ART. after graduating from Shenkar design school he put the affort to collect as many talented designers as need to get you our products made in a quality you deserve.</p>
+        </div>
+        <div class="item3">
+            <img src="images/OR.jpg" class="or-img">
+            <h1>Or Golestani</h1>
+            <p>Our main web-designer and co-founder deffinetely the most talanted and hottest of the team,, It safe to say there is no SHE.ART without this guy. </p>
+        </div>
+        <div class="item4">
+            <img src="images/Igor.jpg">
+            <h1>IGOR</h1>
+            <p>We actualy dont know much about Igor to be honest...One day he just followed us home.but by now he's already a key member in the team. </p>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for androidand IOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/She-LOGO-Red.png">
+                    <p>Our purpose is to take the current affiars into our daily fashion.</p>
+
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Or Golestani</p>
+        </div>
+    </div>
+    <!-- ---JS for toggle menu--- -->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        console.log(menuItems.style.height)
+        menuItems.style.maxHeight = "0px";
+        console.log(menuItems.style.height);
+
+        function menutoggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px"
+            } else {
+                menuItems.style.maxHeight = "0px"
+
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
